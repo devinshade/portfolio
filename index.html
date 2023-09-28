@@ -8,37 +8,45 @@
     </head>
     <body>
 <!-- THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them -->
-        <header>
+        <header class="flexbox-header">
             <h1>Devin Shade</h1>
-            <img src="./assets/Headshot.jpeg" alt="Photo of Devin" width="150" height="auto"/>
             <nav>
 <!-- THEN the UI scrolls to the corresponding section -->
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#work">My Work</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
+                <ul id="nav-ul">
+                    <li class="nav-list"><a href="#about">About Me</a></li>
+                    <li class="nav-list"><a href="#work">My Work</a></li>
+                    <li class="nav-list"><a href="#contact">Contact Me</a></li>
                 </ul>
             </nav>
         </header>
+        <div class="hero-image">
+            <img src="./assets/Headshot.jpeg" alt="Photo of Devin" width="150" height="auto"/>
+        </div>
         <main>
             <section id="about">
                 <h1>About Me</h1>
+                <p>Here I will write a breif description about myself.</p>
             </section>
-<!-- THEN the UI scrolls to a section with titled images of the developer's applications<br> -->
-            <section id="work">
-                <h1>My Work</h1>
+
 <!-- All app tiles will link to the deployed application -->
-                <article class="container card">
-<!-- App tile 1 will be larger than the others -->
-                    <h2>Application Tile 1</h2>
-                </article>
-                <article class="container card">
-                    <h2>Application Tile 2</h2>
-                </article class="container card">
-                <article>
-                    <h2>Application Tile 3</h2>
-                </article>
+            <section id="work">
+                <div class="flexbox-container">
+                <h1>My Work</h1>
+                    <article class="flexbox-tile flexbox-tile-1">
+    <!-- App tile 1 will be larger than the others -->
+                        <h2><a href="https://devinshade.github.io/mod-1-challenge/" target="_blank">Module 1 Challenge</a></h2>
+                    </article>
+
+                    <article class="flexbox-tile flexbox-tile-2">
+                        <h2>Application Tile 2</h2>
+                    </article>
+
+                    <article class="flexbox-tile flexbox-tile-3">
+                        <h2>Application Tile 3</h2>
+                    </article>
+                </div>
             </section>
+
             <section id="contact">
                 <h1>Contact Me</h1>
                 <ul>
@@ -50,7 +58,7 @@
             </section>
         </main>
         <footer>
-
+            <h3>Made with Panic & Procrastination</h3>
         </footer>
     </body>
 </html>

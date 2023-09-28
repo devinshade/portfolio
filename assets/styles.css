@@ -1,40 +1,89 @@
+/* header flexbox styling */
+body {
+    background-color: #727272;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.flexbox-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    align-items: center;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: gray;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(48, 47, 47, 0.5))
+}
+
 /* Navigation Styling */
-ul {
+#nav-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-    color: white;
-  }
+}
   
-li {
-float: left;
+.nav-list {
+    float: left;
 }
 
-li a {
-display: block;
+.nav-list a {
 color: white;
 text-align: center;
 padding: 14px 16px;
-text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.nav-list a:hover {
 background-color: #111;
 }
 
-/* Application tile container flexbox styling */
+
+
+/* Application tiles container flexbox styling */
+
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexbox-tile {
+    justify-content: center;
+    padding: 50px;
+    margin: 20px;
+    border: 2px solid black;
+    width: 250px;
+
+}
+
+.flexbox-tile:hover {
+    border-color: rgb(20, 175, 175);
+    color: rgb(20, 175, 175);;
+}
+
+.flexbox-tile-1 {
+    width: 600px;
+}
+
+/* footer styling */
+h3 {
+    text-align: center;
+}
 
 @media only screen and (max-width: 992px) {
-    .card {
+    .flexbox-container{
       width: 50%;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .card {
+    .flexbox-container{
       width: 100%;
     }
 }
