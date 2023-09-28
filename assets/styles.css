@@ -44,8 +44,6 @@ padding: 14px 16px;
 background-color: #111;
 }
 
-
-
 /* Application tiles container flexbox styling */
 
 .flexbox-container {
@@ -59,16 +57,29 @@ background-color: #111;
     margin: 20px;
     border: 2px solid black;
     width: 250px;
+    height: 250px;
 
 }
 
 .flexbox-tile:hover {
-    border-color: rgb(20, 175, 175);
-    color: rgb(20, 175, 175);;
+    border-color: rgb(29, 105, 105);
+    color: rgb(20, 175, 175);
 }
 
 .flexbox-tile-1 {
     width: 600px;
+    height: auto;
+}
+
+#tile-1-img {
+    position: relative;
+}
+
+h2 {
+    color: white;
+    border: 2px solid gray;
+    background-color: gray;
+    padding: 10px;
 }
 
 /* footer styling */
