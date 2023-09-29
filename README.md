@@ -28,7 +28,7 @@ THEN I am presented with a responsive layout that adapts to my viewport<br>
 
 ![Preview: My Portfolio](./assets/Screenshot%202023-09-28%20at%209.02.48%20PM.png)
 
-[Mod-2-Challenge]()
+[Mod-2-Challenge](https://devinshade.github.io/mod-2-challenge/)
 
 ## License
 
