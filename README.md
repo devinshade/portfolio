@@ -26,7 +26,7 @@ THEN I am presented with a responsive layout that adapts to my viewport<br>
 
 ## Usage
 
-![Preview: My Portfolio](./assets/Screenshot%202023-09-28%20at%209.02.48%20PM.png)
+![Preview: My Portfolio](./assets/Screenshot%202023-11-06%20at%209.07.26 PM.png)
 
 [Mod-2-Challenge](https://devinshade.github.io/mod-2-challenge/)
 
