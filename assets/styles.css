@@ -56,8 +56,8 @@ background-color: #111;
     padding: 50px;
     margin: 20px;
     border: 2px solid black;
-    width: 250px;
-    height: 250px;
+    width: auto;
+    height: auto;
 
 }
 
@@ -71,8 +71,10 @@ background-color: #111;
     height: auto;
 }
 
-#tile-1-img {
+#tile-img {
     position: relative;
+    width: 600px;
+    height: auto;
 }
 
 h2 {
