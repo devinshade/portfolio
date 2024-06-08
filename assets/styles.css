@@ -17,8 +17,10 @@ body {
     justify-content: center;
     padding: 10px;
     margin: 10px;
-    background-color: gray;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(48, 47, 47, 0.5))
+}
+
+#photo {
+    border-radius: 10%;
 }
 
 /* Navigation Styling */
@@ -46,10 +48,10 @@ background-color: #111;
 
 /* Application tiles container flexbox styling */
 
-.flexbox-container {
+/* .flexbox-container {
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 .flexbox-tile {
     justify-content: center;

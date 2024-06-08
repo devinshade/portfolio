@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Mod 2 Challenge</title>
+        <title>Hire Devin Shade</title>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./assets/styles.css"/>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     </head>
     <body>
 <!-- THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them -->
         <header class="flexbox-header">
+            <div class="hero-image">
+                <img id="photo" src="./assets/Headshot.jpeg" alt="Photo of Devin" width="150" height="auto"/>
+            </div>
             <h1>Devin Shade</h1>
             <nav>
 <!-- THEN the UI scrolls to the corresponding section -->
@@ -19,13 +24,23 @@
                 </ul>
             </nav>
         </header>
-        <div class="hero-image">
-            <img src="./assets/Headshot.jpeg" alt="Photo of Devin" width="150" height="auto"/>
-        </div>
         <main>
             <section id="about">
                     <h1>About Me</h1>
-                    <p>Here I will write a breif description about myself.</p>
+                        <p>Proactive, talented, committed, and adaptable with outstanding interpersonal communication
+                            skills. Adept at managing multiple projects while remaining detail oriented and organized. Excellent with
+                            customer service, team building, and working cross-functionally. Experienced in multiple computer
+                            systems and software programs.</p>
+                    <h2>Technical Proficiencies</h2>
+                        <ul>
+                            <li>Google Workspaces</li>
+                            <li>Office 365</li>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li></li>
+                        </ul>
             </section>
 
 <!-- All app tiles will link to the deployed application -->
@@ -69,7 +84,11 @@
             </section>
         </main>
         <footer>
-            <h3>Thanks for looking! 🙂</h3>
+            <h3>Thanks for being here! 🥳</h3>
         </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     </body>
 </html>
