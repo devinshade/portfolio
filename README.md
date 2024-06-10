@@ -1,4 +1,4 @@
-# Basic Portfolio - HTML/CSS
+# Basic Portfolio - HTML/CSS/JS
 
 # User Story
 <p>
