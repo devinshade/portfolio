@@ -1,16 +1,23 @@
 /* header flexbox styling */
-body {
+/* body {
     background-color: #727272;
-    color: white;
+    color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.flexbox-header {
+} */
+/* .flexbox-header {
     display: flex;
     justify-content: space-around;
     background-color: #333;
-    color: white;
+    color: black;
     align-items: center;
-}
+} */
+/* box sizing best practice */
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 .hero-image {
     display: flex;
@@ -19,12 +26,16 @@ body {
     margin: 10px;
 }
 
+
+
 #photo {
     border-radius: 10%;
+    display: flex;
+    justify-content: center;
 }
 
 /* Navigation Styling */
-#nav-ul {
+/* #nav-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -36,19 +47,18 @@ body {
 }
 
 .nav-list a {
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
-}
+} */
 
-/* Change the link color to #111 (black) on hover */
-.nav-list a:hover {
+/* Change the link color to white on hover */
+/* .nav-list a:hover {
     background-color: gray;
     color: white;
-}
+} */
 
 /* Application tiles container flexbox styling */
-
 /* .flexbox-container {
     display: flex;
     flex-wrap: wrap;

@@ -6,33 +6,61 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./assets/styles.css"/>
         <!-- bootstrap -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
     <body>
 <!-- THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them -->
-        <header class="flexbox-header">
-            <div class="hero-image">
-                <img id="photo" src="./assets/Headshot.jpeg" alt="Photo of Devin" width="150" height="auto"/>
+        <!-- <header class="container">
+            <div class="row">
+                <div class="hero-image">
+                    <img id="photo" src="./assets/Headshot.jpeg" alt="Photo of Devin" width="150" height="auto"/>
+                </div>
             </div>
             <h1>Devin Shade</h1>
-            <nav>
+            <nav> -->
 <!-- THEN the UI scrolls to the corresponding section -->
-                <ul id="nav-ul">
+                <!-- <ul id="nav-ul">
                     <li class="nav-list"><a href="#about">About Me</a></li>
                     <li class="nav-list"><a href="#work">My Work</a></li>
                     <li class="nav-list"><a href="#contact">Contact Me</a></li>
                 </ul>
             </nav>
-        </header>
+        </header> -->
+<!-- bootstrap nav -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Devin Shade</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#work">My Work</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                        </li>
+                    </ul>
+                <!-- <span class="navbar-text">
+                    Navbar text with an inline element
+                </span> -->
+                </div>
+            </div>
+        </nav>
+
         <main class="container">
-            <section id="about">
                 <div class="row">
+                    <div class="hero-image">
+                        <img id="photo" src="./assets/Headshot.jpeg" alt="Photo of Devin" width="200" height="auto"/>
+                    </div>
                     <div class="col-md-8">
+                    <section id="about">
                         <h1>About Me</h1>
-                            <p>Proactive, talented, committed, and adaptable with outstanding interpersonal communication
-                                skills. Adept at managing multiple projects while remaining detail oriented and organized. Excellent with
-                                customer service, team building, and working cross-functionally. Experienced in multiple computer
-                                systems and software programs.</p>
+                            <p>Proactive, talented, committed, and adaptable with outstanding interpersonal communication skills. Adept at managing multiple projects while remaining detail oriented and organized. Excellent with customer service, team building, and working cross-functionally. Experienced in multiple computer systems and software programs.</p>
                         <h2>Technical Proficiencies</h2>
                             <ul>
                                 <li>Google Workspaces</li>
@@ -96,25 +124,42 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <section id="contact">
-                        <h3>Contact Me</h3>
-                        <ul>
-                            <li>devdshade@gmail.com</li>
-                            <li><a href="https://github.com/devinshade" target="_blank">GitHub</a></li>
-                            <li><a href="https://www.linkedin.com/in/devin-shade-649640231/" target="_blank">LinkedIn</a></li>
-                        </ul>
-                    </section>
-                </div>
-                <h4>Thanks for being here! 🥳</h3>
+        <footer class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand">Contact Me</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://github.com/devinshade">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://www.linkedin.com/in/devin-shade-649640231/">LinkedIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">devdshade@gmail.com</a>
+                    </li>
+                  <!-- <li class="nav-item dropup">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropup
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">devdshade@gmail.com</a></li> -->
+                      <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
         </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+        <!-- Popper is optional if you plan to use dropdowns, popovers, or tooltips -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <!-- required for bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
         <script src="./assets/script.js"></script>
     </body>
 </html>
