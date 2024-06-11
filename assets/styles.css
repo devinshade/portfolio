@@ -32,6 +32,12 @@ html {
     justify-content: center;
 }
 
+.caption-bg {
+    color: black;
+    background-color: pink;
+    box-shadow: 10px 5px 5px black;
+}
+
 /* Navigation Styling */
 /* #nav-ul {
     list-style-type: none;

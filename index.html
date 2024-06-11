@@ -9,23 +9,6 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
     <body>
-<!-- THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them -->
-        <!-- <header class="container">
-            <div class="row">
-                <div class="hero-image">
-                    <img id="photo" src="./assets/Headshot.jpeg" alt="Photo of Devin" width="150" height="auto"/>
-                </div>
-            </div>
-            <h1>Devin Shade</h1>
-            <nav> -->
-<!-- THEN the UI scrolls to the corresponding section -->
-                <!-- <ul id="nav-ul">
-                    <li class="nav-list"><a href="#about">About Me</a></li>
-                    <li class="nav-list"><a href="#work">My Work</a></li>
-                    <li class="nav-list"><a href="#contact">Contact Me</a></li>
-                </ul>
-            </nav>
-        </header> -->
 <!-- bootstrap nav -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid d-flex flex-row-reverse">
@@ -45,9 +28,6 @@
                         <a class="nav-link active" href="#contact">Contact Me</a>
                         </li>
                     </ul>
-                <!-- <span class="navbar-text">
-                    Navbar text with an inline element
-                </span> -->
                 </div>
             </div>
         </nav>
@@ -62,19 +42,102 @@
                         <h1>About Me</h1>
                             <p>Proactive, talented, committed, and adaptable with outstanding interpersonal communication skills. Adept at managing multiple projects while remaining detail oriented and organized. Excellent with customer service, team building, and working cross-functionally. Experienced in multiple computer systems and software programs.</p>
                         <h2>Technical Proficiencies</h2>
-                            <ul>
-                                <li>Google Workspaces</li>
-                                <li>Office 365</li>
-                                <!-- TODO: flippable card: front='Front End' back=lists HTML, CSS, bootstrap, etc -->
-                                <li>HTML/CSS</li>
-                                <li>Git</li>
-                                <li>JavaScript & jQuery</li>
-                                <li>Bootstrap, Tailwind, Materialize</li>
-                                <li>React</li>
-                                <li>Node.js</li>
-                                <li>MongoDB</li>
-                                <!-- <li></li> -->
-                            </ul>
+                            <div class="accordion" id="skillsAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">    
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Computer Skills
+                                            </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion">
+                                      <div class="accordion-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <ul class="col">
+                                                    <li>Google Workspace</li>
+                                                    <li>Office 365</li>
+                                                    <li>PM Tools: Jira, Asana, Airtable</li>
+                                                    <li>Salesforce</li>
+                                                    <li>Zendesk</li>
+                                                </ul>
+                                                <ul class="col">
+                                                    <li>Zip</li>
+                                                    <li>Oomnitza</li>
+                                                    <li>Outreach</li>
+                                                    <li>ZoomInfo</li>
+                                                    <li>LinkedIn SalesNav</li>
+                                                </ul>
+                                            </div>
+                                        </div>                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Frontend
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#skillsAccordion">
+                                    <div class="accordion-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <ul class="col">
+                                                    <li>HTML</li>
+                                                    <li>CSS</li>
+                                                    <li>JavaScript</li>
+                                                    <li>Vite</li>
+                                                </ul>
+                                                <div class="col"><strong>Libraries</strong>
+                                                    <ul>
+                                                        <li>jQuery</li>
+                                                        <li>React</li>
+                                                        <li>Popper.js</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col"><strong>Frameworks</strong>
+                                                    <ul>
+                                                        <li>Bootstrap</li>
+                                                        <li>Tailwind</li>
+                                                        <li>Materialize</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Backend
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion">
+                                    <div class="accordion-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <ul class="col">
+                                                    <li>Git</li>
+                                                    <li>MySQL</li>
+                                                    <li>PostgreSQL</li>
+                                                    <li>Insomnia</li>
+                                                    <li>JavaScript</li>
+                                                    <li>MongoDB</li>
+                                                    <!-- <li>Redis</li> -->
+                                                </ul>
+                                                <div class="col"><strong>Frameworks</strong>
+                                                    <ul>
+                                                        <li>Node.js</li>
+                                                        <li>Express.js</li>
+                                                        <!-- <li></li> -->
+                                                    </ul>                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                     </div>
                 </div>
             </section>
@@ -93,41 +156,49 @@
 
             <section id="bootcamp">
                 <div class="container">
-                <!-- <div class="flexbox-container"> -->
-                    <h2>Bootcamp Projects</h1>
-                        <div class="row">
-                            <article class="col-md-4">
-                                <!-- <article class="flexbox-tile flexbox-tile-1"> -->
-                                    <a href="https://devinshade.github.io/mod-1-challenge/" target="_blank">
-                                    <h3>Accessibility Audit</h2>
-                                    <img id="tile-img" src="./assets/Screenshot 2023-09-28 at 4.59.14 PM.png" alt="mod1" width="600" height="auto">
-                                    <p>Edited existing code to meet accessibility standards.</p>
-                                </a>
-                            </article>
-                        </div>
-                        <div class="row">
-                            <article class="col-md-4">
-                                <!-- <article class="flexbox-tile" id="flexbox-tile-2"> -->
-                                <a href="https://devinshade.github.io/Dadhumor-Incorporated/" target="_blank">
-                                <h3>Dad Joke Weather Dashboard</h2>
-                                <img id="tile-img" src="./assets/Screenshot 2023-11-06 at 5.33.42 PM.png" alt="screenshot of depoloyed webpage">
-                                <p>Worked with a team to create a weather dashboard that displays dad jokes!</p>
-                                </a>
-                            </article>
-                        </div>
-                    <!-- <div class="row">
-                            <article class="col-md-4">
-                                <a href="https://locallensvenuereview-d0ea92e8b88a.herokuapp.com/" target="_blank">
-                                <h3 class="text">Local Lens</h2>
-                                <img id="tile-img" src="./assets/Screenshot 2024-01-12 at 4.27.47 PM.png" alt="screenshot of depoloyed webpage">
-                                <p>Worked with a team to create a venue/event review application.</p>
-                                </a>
-                            </article>
-                        </div> -->
-                </div>
+                    <div class="row">
+        <!-- ! todo: put bootcamp project list into carousel -->
+                        <h2>Bootcamp Projects</h1>
+                            <div id="bootcampProjects" class="carousel slide col-md-5">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#bootcampProjects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#bootcampProjects" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img id="tile-img" src="./assets/Screenshot 2023-09-28 at 4.59.14 PM.png" class="d-block w-100" alt="mod1" width="600" height="auto">
+                                    <a href="https://github.com/devinshade/portfolio" target="_blank">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <div class="caption-bg">
+                                            <h5>Accessibility Audit</h5>
+                                            <p>Edited existing code to meet accessibility standards.</p>
+                                        </div>
+                                    </div></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <img id="tile-img" src="./assets/Screenshot 2023-11-06 at 5.33.42 PM.png" class="d-block w-100" alt="screenshot of depoloyed webpage">
+                                    <a href="https://devinshade.github.io/Dadhumor-Incorporated/" target="_blank">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <div class="caption-bg">
+                                            <h5>Dad Joke Weather Dashboard</h5>
+                                            <p>Worked with a team to create a weather dashboard that displays dad jokes!</p>
+                                        </div>
+                                    </div></a>
+                                </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#bootcampProjects" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#bootcampProjects" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                    </div>
             </section>
         </main>
-        <footer class="navbar navbar-expand-lg bg-body-tertiary">
+        <footer class="navbar navbar-expand-lg bg-body-tertiary" id="contact">
             <div class="container-fluid d-flex">
                 <a class="navbar-brand">Contact Me</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -158,7 +229,6 @@
                 </div>
             </div>
         </footer>
-
         <!-- Popper is optional if you plan to use dropdowns, popovers, or tooltips -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <!-- required for bootstrap JS -->
