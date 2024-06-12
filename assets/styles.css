@@ -14,11 +14,21 @@
 /* box sizing best practice */
 html {
     box-sizing: border-box;
-  }
+}
 *, *:before, *:after {
     box-sizing: inherit;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
+}
+
+main {
+    background-image: radial-gradient(circle, #dee2e6, white);
+    /* border-radius: 1%; */
+}
+
+#resume-download:hover {
+    color: #6ea8fe;
+    text-decoration: underline;
+}
 
 .hero-image {
     display: flex;
@@ -39,8 +49,8 @@ html {
     box-shadow: 10px 5px 5px black;
 }
 
-#resume-download:hover {
-    /* color: #6ea8fe; */
+#contact-links:hover {
+    color: #6ea8fe;
     text-decoration: underline;
 }
 
