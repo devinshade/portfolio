@@ -39,6 +39,11 @@ html {
     box-shadow: 10px 5px 5px black;
 }
 
+#resume-download:hover {
+    /* color: #6ea8fe; */
+    text-decoration: underline;
+}
+
 /* Navigation Styling */
 /* #nav-ul {
     list-style-type: none;

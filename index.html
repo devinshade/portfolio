@@ -19,26 +19,28 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+                            <a class="nav-link active" aria-current="page" href="#about">About Me</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active" href="#work">My Work</a>
+                            <a class="nav-link active" href="#work">My Work</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active" href="#contact">Contact Me</a>
+                            <a class="nav-link active" href="#contact">Contact Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="resume-download" class="nav-link active" href="./assets/Resume - ShadeDevin.pdf" data-bs-toggle="tooltip" data-bs-title="Download Resume" download>Resume</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-        <main class="container">
-                <div class="row">
+        <main class="container grid gap-3">
+                <div class="row p-2 g-col-6">
                     <div class="hero-image">
-                        <img id="photo" src="./assets/Headshot.jpeg" alt="Photo of Devin" width="200" height="auto"/>
+                        <img id="photo" src="./assets/Headshot.jpeg" alt="Photo of Devin" width="225" height="auto"/>
                     </div>
-                    <div class="col-md-8">
-                    <section id="about">
+                    <div class="col-md-8 grid gap-3">
+                    <section id="about" class="p-4 g-col-6">
                         <h1>About Me</h1>
                             <p>Proactive, talented, committed, and adaptable with outstanding interpersonal communication skills. Adept at managing multiple projects while remaining detail oriented and organized. Excellent with customer service, team building, and working cross-functionally. Experienced in multiple computer systems and software programs.</p>
                         <h2>Technical Proficiencies</h2>
@@ -147,18 +149,17 @@
             <section id="work">
                 <div class="container">
                 <!-- <div class="flexbox-container"> -->
-                    <div class="row">
-                        <div>
+                    <div class="row grid gap-3">
+                        <div class="p-4 g-col-6">
                             <h1>My Work</h1>
                                <p>Coming soon!</p> 
                         </div>
                     </div>
                 </div>
             </section>
-
             <section id="bootcamp">
-                <div class="container">
-                    <div class="row">
+                <div class="container grid gap-3">
+                    <div class="row p-4 g-col-6">
         <!-- todo: update project carousel so faded images show on either side of active slide -->
                         <h2>Bootcamp Projects</h1>
                             <div id="bootcampProjects" class="carousel slide col-md-5">
