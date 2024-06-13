@@ -22,12 +22,16 @@ html {
 
 main {
     background-image: radial-gradient(circle, #dee2e6, white);
-    /* border-radius: 1%; */
+    border-radius: 10%;
 }
 
 #resume-download:hover {
     color: #6ea8fe;
     text-decoration: underline;
+}
+
+#title-name, #foot-contact {
+    font-size: 24px;
 }
 
 .hero-image {
@@ -43,9 +47,17 @@ main {
     justify-content: center;
 }
 
+#h1 {
+    font-size: 30px;
+}
+
+#h2 {
+    font-size: 24px;
+}
+
 .caption-bg {
     color: black;
-    background-color: pink;
+    background-color: rgb(250, 210, 216);
     box-shadow: 10px 5px 5px black;
 }
 
